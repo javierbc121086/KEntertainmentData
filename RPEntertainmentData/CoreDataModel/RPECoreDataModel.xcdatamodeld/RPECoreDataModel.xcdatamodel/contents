@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RPECDCountryEntity" representedClassName="RPECDCountryEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationshipCountryTv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDTvEntity" inverseName="relationshipTvCountry" inverseEntity="RPECDTvEntity" syncable="YES"/>
+    </entity>
+    <entity name="RPECDGenreEntity" representedClassName="RPECDGenreEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="genreId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relationshipGenreTv" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDTvEntity" inverseName="relationshipTvGenre" inverseEntity="RPECDTvEntity" syncable="YES"/>
+        <relationship name="relationshipMovie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDMovieEntity" inverseName="relationshipMovieGenre" inverseEntity="RPECDMovieEntity" syncable="YES"/>
+    </entity>
+    <entity name="RPECDMovieEntity" representedClassName="RPECDMovieEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="adult" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="backdropPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="originalLanguage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posterPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="voteAverage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="voteCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relationshipMovieGenre" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDGenreEntity" inverseName="relationshipMovie" inverseEntity="RPECDGenreEntity" syncable="YES"/>
+    </entity>
+    <entity name="RPECDTvEntity" representedClassName="RPECDTvEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="backdropPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstAirDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalLanguage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="originalName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posterPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voteAverage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="voteCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="relationshipTvCountry" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDCountryEntity" inverseName="relationshipCountryTv" inverseEntity="RPECDCountryEntity" syncable="YES"/>
+        <relationship name="relationshipTvGenre" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RPECDGenreEntity" inverseName="relationshipGenreTv" inverseEntity="RPECDGenreEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RPECDMovieEntity" positionX="-36" positionY="9" width="128" height="255"/>
+        <element name="RPECDGenreEntity" positionX="-9" positionY="135" width="128" height="90"/>
+        <element name="RPECDTvEntity" positionX="18" positionY="162" width="128" height="240"/>
+        <element name="RPECDCountryEntity" positionX="36" positionY="180" width="128" height="75"/>
+    </elements>
+</model>
