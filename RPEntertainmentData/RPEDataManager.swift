@@ -10,28 +10,33 @@ import Foundation
 import CoreData
 
 public class RPEDataManager {
+    private let concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
     public static let shared = RPEDataManager()
     
-    let identifier: String  = "mx.com.gipsyhub.RPEntertainmentData"
-    let model: String       = "RPECoreDataModel"
+    private init() { }
+    
+    let identifier      = "mx.com.gipsyhub.RPEntertainmentData"
+    let coreDataModel   = "RPECoreDataModel"
     
     @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer? = {
-        
-        let messageKitBundle = Bundle(identifier: self.identifier)
-        let modelURL = messageKitBundle!.url(forResource: self.model, withExtension: "momd")!
-        
-        if let managedObjectModel =  NSManagedObjectModel(contentsOf: modelURL) {
-            let container = NSPersistentContainer(name: self.model, managedObjectModel: managedObjectModel)
-            container.loadPersistentStores { (storeDescription, error) in
-                if let err = error {
-                    fatalError("Loading of store failed:\(err)")
+        self.concurrentQueue.sync {
+            let messageKitBundle = Bundle(identifier: self.identifier)
+            if let modelURL = messageKitBundle?.url(forResource: self.coreDataModel, withExtension: "momd") {
+                if let managedObjectModel =  NSManagedObjectModel(contentsOf: modelURL) {
+                    let container = NSPersistentContainer(name: self.coreDataModel, managedObjectModel: managedObjectModel)
+                    
+                    container.loadPersistentStores { (storeDescription, error) in
+                        if let err = error {
+                            fatalError("Loading of store failed:\(err)")
+                        }
+                    }
+                    
+                    return container
                 }
             }
             
-            return container
+            return nil
         }
-        
-        return nil
     }()
 }
