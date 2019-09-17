@@ -1,0 +1,16 @@
+PODS:
+  - RPEntertainmentDomain (0.0.5)
+
+DEPENDENCIES:
+  - RPEntertainmentDomain
+
+SPEC REPOS:
+  "git@github.com:javierbc121086/RPEntertainmentDomainSpec.git":
+    - RPEntertainmentDomain
+
+SPEC CHECKSUMS:
+  RPEntertainmentDomain: 5e14527810d8c6797da6a00d139edfc9b1b33c8d
+
+PODFILE CHECKSUM: 491e6792689a128dedc87a99c12e415ff9abbc14
+
+COCOAPODS: 1.7.5

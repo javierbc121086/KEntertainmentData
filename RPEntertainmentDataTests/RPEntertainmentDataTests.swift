@@ -7,26 +7,52 @@
 //
 
 import XCTest
+import CoreData
+import RPEntertainmentDomain
 @testable import RPEntertainmentData
 
 class RPEntertainmentDataTests: XCTestCase {
+    
+    var modelWrapper: RPEMovieWrapper?
 
     override func setUp() {
-        
+        self.modelWrapper = RPEMovieWrapper()
     }
 
     override func tearDown() {
-        
+        self.modelWrapper = nil
     }
 
     func testSaveMovieDataModel() {
-        RPEDataManager.shared.createMovie(firstname: "John", lastname:    "Doe", age: 35)
-        RPEDataManager.shared.createMovie(firstname: "Liam", lastname: "Croft", age: 27)
-        RPEDataManager.shared.createMovie(firstname: "Oliver", lastname: "Twist", age: 15)
-        RPEDataManager.shared.createMovie(firstname: "Luke", lastname: "Skywalker", age: 70)
+        for index in 1...1000 {
+            let movieModel = RPEMovieModel(
+                id: index,
+                popularity: Double(index),
+                voteCount: index,
+                video: false,
+                adult: false,
+                originalLanguage: "originalLanguage \(index)",
+                originalTitle: "originalTitle \(index)",
+                genreIds: [100, 200, 300],
+                title: "title \(index)",
+                voteAverage: Double(index),
+                overview: "overview \(index)",
+                releaseDate: "releaseDate \(index)",
+                backdropPath: "backdropPath \(index)",
+                posterPath: "posterPath \(index)"
+            )
+            
+            self.modelWrapper?.save(model: movieModel)
+        }
     }
     
-    func testgetMovieDataModel() {
-        RPEDataManager.shared.fetchMovie()
+    func testGetAllDataMoviesModel() {
+        self.modelWrapper?.getAll()?.forEach({ (movieModel) in
+            print(movieModel)
+        })
+    }
+    
+    func testDeleteAllMoviesSuccess() {
+        self.modelWrapper?.deleteAll()
     }
 }

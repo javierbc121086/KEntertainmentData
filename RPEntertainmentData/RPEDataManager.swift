@@ -9,18 +9,30 @@
 import Foundation
 import CoreData
 
-public class RPEDataManager {
-    private let concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
-    public static let shared = RPEDataManager()
+class RPEDataManager {
+    private let identifier      = "mx.com.gipsyhub.RPEntertainmentData"
+    private let coreDataModel   = "RPECoreDataModel"
+    
+    private let _concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)
+    private static var _shared: RPEDataManager?
+    
+    class var Shared: RPEDataManager {
+        if _shared == nil {
+            _shared = RPEDataManager()
+        }
+        
+        return _shared!
+    }
+    
+    class func disposeStance() {
+        _shared = nil
+    }
     
     private init() { }
     
-    let identifier      = "mx.com.gipsyhub.RPEntertainmentData"
-    let coreDataModel   = "RPECoreDataModel"
-    
     @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer? = {
-        self.concurrentQueue.sync {
+        _concurrentQueue.sync {
             let messageKitBundle = Bundle(identifier: self.identifier)
             if let modelURL = messageKitBundle?.url(forResource: self.coreDataModel, withExtension: "momd") {
                 if let managedObjectModel =  NSManagedObjectModel(contentsOf: modelURL) {

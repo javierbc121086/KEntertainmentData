@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "RPEMovieWrapperBridge.save(model:):RPEMovieWrapperBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSSet(array: model.genreIds)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RPEMovieWrapperBridge.getAll():RPEMovieWrapperBridge.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "movie.relationshipMovieGenre">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

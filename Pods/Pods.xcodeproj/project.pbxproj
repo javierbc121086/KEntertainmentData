@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A2E01F59541659C45B277AD02954391 /* RPEMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B3D4FE49BCD01525F8938EB3545799 /* RPEMovieModel.swift */; };
+		109E95D541BB026AF76883CF7C4C8336 /* Pods-RPEntertainmentData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5052490AED8DF30C80D917846CDC1F /* Pods-RPEntertainmentData-dummy.m */; };
+		3EA91CE406FE79203DB3A0B250AFCB93 /* RPEHttpRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837294035843E9C5941AC032D87B2A84 /* RPEHttpRequestType.swift */; };
+		5843726D0956A94E48B8156BD3980170 /* RPETvModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C00DB31DABD70ED4ADABDDB44DE2F /* RPETvModel.swift */; };
+		5DE9AB29009A77C026CBDED23C3BFC29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8518247287CBDC5A211CDB3534BCC26F /* Pods-RPEntertainmentDataTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67EE3B69847DA428FE0446288372EE90 /* Pods-RPEntertainmentDataTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EB5633EFCD40B2A3DC334460FBC39EA /* Pods-RPEntertainmentDataTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D87FAA8A60DC46E927BE6E185901BE9D /* Pods-RPEntertainmentDataTests-dummy.m */; };
+		93F9CB34DF86750B897CEC2FA1EA8BA7 /* Pods-RPEntertainmentData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AA6B1B596C92661970E347F3A6AF4B3 /* Pods-RPEntertainmentData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A061124CF25DD3C5A9E717B2AE5188DA /* RPEntertainmentDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 83A0D4E9E1174D62BA8D52D56EB87D24 /* RPEntertainmentDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6AD256AF4802D6F3952F7B2059CA0F2 /* RPEntertainmentDomain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 311ECF5AD087A8E9A1D2838A75A4D33E /* RPEntertainmentDomain-dummy.m */; };
+		BD9D76E80BC490F959C95825CF6CDEB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BEDD509A302CBFB749EF5914F4F594E8 /* RPEntertainmentDomain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DC34ACA9614D35DF256EFFBA228796 /* RPEntertainmentDomain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C64D64C3FF16B9FB339617E38EE1B458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60A05CB4489F4E37A8384D685D740CE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D46A416F12B252E4C986759010264F;
+			remoteInfo = RPEntertainmentDomain;
+		};
+		BB91D001EFBFC09DC08AB07B8D301891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D46A416F12B252E4C986759010264F;
+			remoteInfo = RPEntertainmentDomain;
+		};
+		E8FD0459C853CBD1441CDC49C6A62E45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C7EDC2173A0D1D6212039F04B364C8;
+			remoteInfo = "Pods-RPEntertainmentData";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B3D4FE49BCD01525F8938EB3545799 /* RPEMovieModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RPEMovieModel.swift; path = RPEntertainmentDomain/Model/RPEMovieModel.swift; sourceTree = "<group>"; };
+		091CAD1473B6021E4841445CD7C3F055 /* Pods_RPEntertainmentDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RPEntertainmentDataTests.framework; path = "Pods-RPEntertainmentDataTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F167BE3A8FCDB42B1C68C7E1EB4066F /* Pods-RPEntertainmentData-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RPEntertainmentData-acknowledgements.markdown"; sourceTree = "<group>"; };
+		311ECF5AD087A8E9A1D2838A75A4D33E /* RPEntertainmentDomain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RPEntertainmentDomain-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3640DDE4439A693A5F572AD066DCF00C /* Pods-RPEntertainmentDataTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RPEntertainmentDataTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B5052490AED8DF30C80D917846CDC1F /* Pods-RPEntertainmentData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RPEntertainmentData-dummy.m"; sourceTree = "<group>"; };
+		4315D17AB515950954B8C454A6ABA2B6 /* RPEntertainmentDomain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RPEntertainmentDomain.modulemap; sourceTree = "<group>"; };
+		4984D24760CEBA08EB160BA188F96EEA /* Pods-RPEntertainmentDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPEntertainmentDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		58B565E43D0801470A75E9F388004F1C /* RPEntertainmentDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RPEntertainmentDomain.framework; path = RPEntertainmentDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA6B1B596C92661970E347F3A6AF4B3 /* Pods-RPEntertainmentData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RPEntertainmentData-umbrella.h"; sourceTree = "<group>"; };
+		5D2C00DB31DABD70ED4ADABDDB44DE2F /* RPETvModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RPETvModel.swift; path = RPEntertainmentDomain/Model/RPETvModel.swift; sourceTree = "<group>"; };
+		631914063DDB3FDDABB17A555D8D0F48 /* Pods-RPEntertainmentData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPEntertainmentData.debug.xcconfig"; sourceTree = "<group>"; };
+		637D563C243584E8A422C2B63431584A /* Pods-RPEntertainmentData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RPEntertainmentData.modulemap"; sourceTree = "<group>"; };
+		63FF18B5CBE45761A615DB43F787018A /* RPEntertainmentDomain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RPEntertainmentDomain-prefix.pch"; sourceTree = "<group>"; };
+		67EE3B69847DA428FE0446288372EE90 /* Pods-RPEntertainmentDataTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RPEntertainmentDataTests-umbrella.h"; sourceTree = "<group>"; };
+		68A0AB925F7056237592D69A8CA64471 /* Pods-RPEntertainmentData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPEntertainmentData.release.xcconfig"; sourceTree = "<group>"; };
+		79B381AD9CE29D21D5386DB3EED13967 /* Pods-RPEntertainmentData-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPEntertainmentData-acknowledgements.plist"; sourceTree = "<group>"; };
+		837294035843E9C5941AC032D87B2A84 /* RPEHttpRequestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RPEHttpRequestType.swift; path = RPEntertainmentDomain/Type/RPEHttpRequestType.swift; sourceTree = "<group>"; };
+		83A0D4E9E1174D62BA8D52D56EB87D24 /* RPEntertainmentDomain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RPEntertainmentDomain.h; path = RPEntertainmentDomain/RPEntertainmentDomain.h; sourceTree = "<group>"; };
+		88DC34ACA9614D35DF256EFFBA228796 /* RPEntertainmentDomain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RPEntertainmentDomain-umbrella.h"; sourceTree = "<group>"; };
+		8F074C2F146E089F122482941D8A3D58 /* Pods-RPEntertainmentDataTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPEntertainmentDataTests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A02EA59833560579D65869FC3C3A1F48 /* Pods_RPEntertainmentData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RPEntertainmentData.framework; path = "Pods-RPEntertainmentData.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13056856B8E2694E012F40953D0B4B0 /* Pods-RPEntertainmentDataTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RPEntertainmentDataTests-frameworks.sh"; sourceTree = "<group>"; };
+		B1F4C0E89BBFFAF5FC3BE12EDC0E736D /* Pods-RPEntertainmentDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPEntertainmentDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C576207CC1A98AFFECB5094B7950D63B /* RPEntertainmentDomain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RPEntertainmentDomain.xcconfig; sourceTree = "<group>"; };
+		D87FAA8A60DC46E927BE6E185901BE9D /* Pods-RPEntertainmentDataTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RPEntertainmentDataTests-dummy.m"; sourceTree = "<group>"; };
+		E76838C57A902C6EFF9387A1F0DB268B /* RPEntertainmentDomain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RPEntertainmentDomain-Info.plist"; sourceTree = "<group>"; };
+		F3BFBAB7B2FFEA96C57EFC68993468BA /* Pods-RPEntertainmentDataTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPEntertainmentDataTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3C0827D5FA3D29CBED536838630C153 /* Pods-RPEntertainmentDataTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RPEntertainmentDataTests.modulemap"; sourceTree = "<group>"; };
+		FF876AA790F2DCFBB86861611C25BB0A /* Pods-RPEntertainmentData-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPEntertainmentData-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2415F9CBFC983AD3E4E99DBAF482CFDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9D76E80BC490F959C95825CF6CDEB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		562C28C31D601C249574C3855D5BA5CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64D64C3FF16B9FB339617E38EE1B458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9410E6FA2F230241EC50C3FEC960C95C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE9AB29009A77C026CBDED23C3BFC29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FC808430E2ED6F184C9EB660062C09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4315D17AB515950954B8C454A6ABA2B6 /* RPEntertainmentDomain.modulemap */,
+				C576207CC1A98AFFECB5094B7950D63B /* RPEntertainmentDomain.xcconfig */,
+				311ECF5AD087A8E9A1D2838A75A4D33E /* RPEntertainmentDomain-dummy.m */,
+				E76838C57A902C6EFF9387A1F0DB268B /* RPEntertainmentDomain-Info.plist */,
+				63FF18B5CBE45761A615DB43F787018A /* RPEntertainmentDomain-prefix.pch */,
+				88DC34ACA9614D35DF256EFFBA228796 /* RPEntertainmentDomain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RPEntertainmentDomain";
+			sourceTree = "<group>";
+		};
+		4703BEFF3E33770517B7AE5AD623A050 /* Pods-RPEntertainmentDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3C0827D5FA3D29CBED536838630C153 /* Pods-RPEntertainmentDataTests.modulemap */,
+				3640DDE4439A693A5F572AD066DCF00C /* Pods-RPEntertainmentDataTests-acknowledgements.markdown */,
+				F3BFBAB7B2FFEA96C57EFC68993468BA /* Pods-RPEntertainmentDataTests-acknowledgements.plist */,
+				D87FAA8A60DC46E927BE6E185901BE9D /* Pods-RPEntertainmentDataTests-dummy.m */,
+				B13056856B8E2694E012F40953D0B4B0 /* Pods-RPEntertainmentDataTests-frameworks.sh */,
+				8F074C2F146E089F122482941D8A3D58 /* Pods-RPEntertainmentDataTests-Info.plist */,
+				67EE3B69847DA428FE0446288372EE90 /* Pods-RPEntertainmentDataTests-umbrella.h */,
+				B1F4C0E89BBFFAF5FC3BE12EDC0E736D /* Pods-RPEntertainmentDataTests.debug.xcconfig */,
+				4984D24760CEBA08EB160BA188F96EEA /* Pods-RPEntertainmentDataTests.release.xcconfig */,
+			);
+			name = "Pods-RPEntertainmentDataTests";
+			path = "Target Support Files/Pods-RPEntertainmentDataTests";
+			sourceTree = "<group>";
+		};
+		B20D4EC04D80F7DA4851A641342A4EDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02EA59833560579D65869FC3C3A1F48 /* Pods_RPEntertainmentData.framework */,
+				091CAD1473B6021E4841445CD7C3F055 /* Pods_RPEntertainmentDataTests.framework */,
+				58B565E43D0801470A75E9F388004F1C /* RPEntertainmentDomain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D91E7D74B8D2ED0B0F93F49D488FA5 /* RPEntertainmentDomain */ = {
+			isa = PBXGroup;
+			children = (
+				837294035843E9C5941AC032D87B2A84 /* RPEHttpRequestType.swift */,
+				08B3D4FE49BCD01525F8938EB3545799 /* RPEMovieModel.swift */,
+				83A0D4E9E1174D62BA8D52D56EB87D24 /* RPEntertainmentDomain.h */,
+				5D2C00DB31DABD70ED4ADABDDB44DE2F /* RPETvModel.swift */,
+				18FC808430E2ED6F184C9EB660062C09 /* Support Files */,
+			);
+			name = RPEntertainmentDomain;
+			path = RPEntertainmentDomain;
+			sourceTree = "<group>";
+		};
+		BF6DA5963F0A6F00C673A47B73A089E8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D74AD441C289873E05E3A64B40CA4527 /* Pods-RPEntertainmentData */,
+				4703BEFF3E33770517B7AE5AD623A050 /* Pods-RPEntertainmentDataTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FA2F549358B8CAF8638F374EC41D6FB7 /* Pods */,
+				B20D4EC04D80F7DA4851A641342A4EDC /* Products */,
+				BF6DA5963F0A6F00C673A47B73A089E8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D74AD441C289873E05E3A64B40CA4527 /* Pods-RPEntertainmentData */ = {
+			isa = PBXGroup;
+			children = (
+				637D563C243584E8A422C2B63431584A /* Pods-RPEntertainmentData.modulemap */,
+				2F167BE3A8FCDB42B1C68C7E1EB4066F /* Pods-RPEntertainmentData-acknowledgements.markdown */,
+				79B381AD9CE29D21D5386DB3EED13967 /* Pods-RPEntertainmentData-acknowledgements.plist */,
+				3B5052490AED8DF30C80D917846CDC1F /* Pods-RPEntertainmentData-dummy.m */,
+				FF876AA790F2DCFBB86861611C25BB0A /* Pods-RPEntertainmentData-Info.plist */,
+				5AA6B1B596C92661970E347F3A6AF4B3 /* Pods-RPEntertainmentData-umbrella.h */,
+				631914063DDB3FDDABB17A555D8D0F48 /* Pods-RPEntertainmentData.debug.xcconfig */,
+				68A0AB925F7056237592D69A8CA64471 /* Pods-RPEntertainmentData.release.xcconfig */,
+			);
+			name = "Pods-RPEntertainmentData";
+			path = "Target Support Files/Pods-RPEntertainmentData";
+			sourceTree = "<group>";
+		};
+		FA2F549358B8CAF8638F374EC41D6FB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3D91E7D74B8D2ED0B0F93F49D488FA5 /* RPEntertainmentDomain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		043A993A8D3C01A01FE56748B82356A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93F9CB34DF86750B897CEC2FA1EA8BA7 /* Pods-RPEntertainmentData-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB3E4669A67F6AD63D53AD4EA93A155 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDD509A302CBFB749EF5914F4F594E8 /* RPEntertainmentDomain-umbrella.h in Headers */,
+				A061124CF25DD3C5A9E717B2AE5188DA /* RPEntertainmentDomain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5CADFF9813234988E4206532513194 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8518247287CBDC5A211CDB3534BCC26F /* Pods-RPEntertainmentDataTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		20D46A416F12B252E4C986759010264F /* RPEntertainmentDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD548D79304F7DF3A9206939F2845745 /* Build configuration list for PBXNativeTarget "RPEntertainmentDomain" */;
+			buildPhases = (
+				ADB3E4669A67F6AD63D53AD4EA93A155 /* Headers */,
+				BF79070346C90253865B69205FDE063E /* Sources */,
+				2415F9CBFC983AD3E4E99DBAF482CFDF /* Frameworks */,
+				05198BC94952B9C74F64D74A3AA9BEED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPEntertainmentDomain;
+			productName = RPEntertainmentDomain;
+			productReference = 58B565E43D0801470A75E9F388004F1C /* RPEntertainmentDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4C7EDC2173A0D1D6212039F04B364C8 /* Pods-RPEntertainmentData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25D84BE674B57B4C48C10721315B3A0F /* Build configuration list for PBXNativeTarget "Pods-RPEntertainmentData" */;
+			buildPhases = (
+				043A993A8D3C01A01FE56748B82356A5 /* Headers */,
+				3B2EF716B72B709BCA087C44325FD1FB /* Sources */,
+				9410E6FA2F230241EC50C3FEC960C95C /* Frameworks */,
+				9AB5D1DE73CB0A09C88CB67926961BD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0628EFD4D00AD66E347F40358F57470F /* PBXTargetDependency */,
+			);
+			name = "Pods-RPEntertainmentData";
+			productName = "Pods-RPEntertainmentData";
+			productReference = A02EA59833560579D65869FC3C3A1F48 /* Pods_RPEntertainmentData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF98844B54506238B7C1ECB38E53AF1D /* Pods-RPEntertainmentDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88FE64C20C91BDF4EB63DBB2A53B8644 /* Build configuration list for PBXNativeTarget "Pods-RPEntertainmentDataTests" */;
+			buildPhases = (
+				FC5CADFF9813234988E4206532513194 /* Headers */,
+				C3275C43900280274007631E3F8241F0 /* Sources */,
+				562C28C31D601C249574C3855D5BA5CC /* Frameworks */,
+				E83F8F1F2FF55F2152B429800DBD2739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				271E8187F0B867495B6E1E36864734D7 /* PBXTargetDependency */,
+				1966325B5942EEC4F905A1C9D0B13131 /* PBXTargetDependency */,
+			);
+			name = "Pods-RPEntertainmentDataTests";
+			productName = "Pods-RPEntertainmentDataTests";
+			productReference = 091CAD1473B6021E4841445CD7C3F055 /* Pods_RPEntertainmentDataTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B20D4EC04D80F7DA4851A641342A4EDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C7EDC2173A0D1D6212039F04B364C8 /* Pods-RPEntertainmentData */,
+				EF98844B54506238B7C1ECB38E53AF1D /* Pods-RPEntertainmentDataTests */,
+				20D46A416F12B252E4C986759010264F /* RPEntertainmentDomain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05198BC94952B9C74F64D74A3AA9BEED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB5D1DE73CB0A09C88CB67926961BD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83F8F1F2FF55F2152B429800DBD2739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B2EF716B72B709BCA087C44325FD1FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109E95D541BB026AF76883CF7C4C8336 /* Pods-RPEntertainmentData-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF79070346C90253865B69205FDE063E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA91CE406FE79203DB3A0B250AFCB93 /* RPEHttpRequestType.swift in Sources */,
+				0A2E01F59541659C45B277AD02954391 /* RPEMovieModel.swift in Sources */,
+				A6AD256AF4802D6F3952F7B2059CA0F2 /* RPEntertainmentDomain-dummy.m in Sources */,
+				5843726D0956A94E48B8156BD3980170 /* RPETvModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3275C43900280274007631E3F8241F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EB5633EFCD40B2A3DC334460FBC39EA /* Pods-RPEntertainmentDataTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0628EFD4D00AD66E347F40358F57470F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RPEntertainmentDomain;
+			target = 20D46A416F12B252E4C986759010264F /* RPEntertainmentDomain */;
+			targetProxy = BB91D001EFBFC09DC08AB07B8D301891 /* PBXContainerItemProxy */;
+		};
+		1966325B5942EEC4F905A1C9D0B13131 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RPEntertainmentDomain;
+			target = 20D46A416F12B252E4C986759010264F /* RPEntertainmentDomain */;
+			targetProxy = 60A05CB4489F4E37A8384D685D740CE2 /* PBXContainerItemProxy */;
+		};
+		271E8187F0B867495B6E1E36864734D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RPEntertainmentData";
+			target = D4C7EDC2173A0D1D6212039F04B364C8 /* Pods-RPEntertainmentData */;
+			targetProxy = E8FD0459C853CBD1441CDC49C6A62E45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44DCE225D258A9893D82B72A1AC25510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4984D24760CEBA08EB160BA188F96EEA /* Pods-RPEntertainmentDataTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45D8DE39FB7EF9E71AED939E376FCF1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C576207CC1A98AFFECB5094B7950D63B /* RPEntertainmentDomain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain.modulemap";
+				PRODUCT_MODULE_NAME = RPEntertainmentDomain;
+				PRODUCT_NAME = RPEntertainmentDomain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5101BC091FD7B3AC471DEA3E9E46AC1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A0AB925F7056237592D69A8CA64471 /* Pods-RPEntertainmentData.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88290DE18D234C63E6FE7E087C526478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1F4C0E89BBFFAF5FC3BE12EDC0E736D /* Pods-RPEntertainmentDataTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AE6D172827E53B5D37F495B4765A7EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631914063DDB3FDDABB17A555D8D0F48 /* Pods-RPEntertainmentData.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E85EB1E0DFD5BF441E2DA58FCDBA3161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C576207CC1A98AFFECB5094B7950D63B /* RPEntertainmentDomain.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RPEntertainmentDomain/RPEntertainmentDomain.modulemap";
+				PRODUCT_MODULE_NAME = RPEntertainmentDomain;
+				PRODUCT_NAME = RPEntertainmentDomain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25D84BE674B57B4C48C10721315B3A0F /* Build configuration list for PBXNativeTarget "Pods-RPEntertainmentData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE6D172827E53B5D37F495B4765A7EBA /* Debug */,
+				5101BC091FD7B3AC471DEA3E9E46AC1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88FE64C20C91BDF4EB63DBB2A53B8644 /* Build configuration list for PBXNativeTarget "Pods-RPEntertainmentDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88290DE18D234C63E6FE7E087C526478 /* Debug */,
+				44DCE225D258A9893D82B72A1AC25510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD548D79304F7DF3A9206939F2845745 /* Build configuration list for PBXNativeTarget "RPEntertainmentDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E85EB1E0DFD5BF441E2DA58FCDBA3161 /* Debug */,
+				45D8DE39FB7EF9E71AED939E376FCF1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

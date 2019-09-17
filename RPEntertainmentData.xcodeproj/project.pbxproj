@@ -3,15 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		129569312328661B00CBAB01 /* RPECoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1295692F2328661B00CBAB01 /* RPECoreDataModel.xcdatamodeld */; };
 		12956934232869C800CBAB01 /* RPEDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12956933232869C800CBAB01 /* RPEDataManager.swift */; };
+		1295693A23287AED00CBAB01 /* IRPEDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295693923287AED00CBAB01 /* IRPEDataManagerDelegate.swift */; };
+		1295694623298FC000CBAB01 /* RPEMovieWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1295694523298FC000CBAB01 /* RPEMovieWrapper.swift */; };
 		12B993EC2325CAF7006A7038 /* RPEntertainmentData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B993E22325CAF7006A7038 /* RPEntertainmentData.framework */; };
 		12B993F12325CAF7006A7038 /* RPEntertainmentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B993F02325CAF7006A7038 /* RPEntertainmentDataTests.swift */; };
 		12B993F32325CAF7006A7038 /* RPEntertainmentData.h in Headers */ = {isa = PBXBuildFile; fileRef = 12B993E52325CAF7006A7038 /* RPEntertainmentData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		450C36725460D7D5ED30FD11 /* RPETvWrapperDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C371F6BFDCA139F92592C /* RPETvWrapperDataTests.swift */; };
+		450C3A125BF177DEC3D02784 /* RPETvWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450C376D1E607BEAA86148B4 /* RPETvWrapper.swift */; };
+		F84199A50AB786DCE6F04DC5 /* Pods_RPEntertainmentData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E584897E978E13E4A7C04804 /* Pods_RPEntertainmentData.framework */; };
+		FB9C23CDF4292B0B4DBCDAC1 /* Pods_RPEntertainmentDataTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4EA9EED87E636FB7BF23A8 /* Pods_RPEntertainmentDataTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +31,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1214E74D51EB07577EDC8211 /* Pods-RPEntertainmentDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPEntertainmentDataTests.debug.xcconfig"; path = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests.debug.xcconfig"; sourceTree = "<group>"; };
 		129569302328661B00CBAB01 /* RPECoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPECoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		12956933232869C800CBAB01 /* RPEDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEDataManager.swift; sourceTree = "<group>"; };
+		1295693923287AED00CBAB01 /* IRPEDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRPEDataManagerDelegate.swift; sourceTree = "<group>"; };
+		1295694523298FC000CBAB01 /* RPEMovieWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEMovieWrapper.swift; sourceTree = "<group>"; };
 		12B993E22325CAF7006A7038 /* RPEntertainmentData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPEntertainmentData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B993E52325CAF7006A7038 /* RPEntertainmentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPEntertainmentData.h; sourceTree = "<group>"; };
 		12B993E62325CAF7006A7038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12B993EB2325CAF7006A7038 /* RPEntertainmentDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPEntertainmentDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12B993F02325CAF7006A7038 /* RPEntertainmentDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPEntertainmentDataTests.swift; sourceTree = "<group>"; };
 		12B993F22325CAF7006A7038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450C371F6BFDCA139F92592C /* RPETvWrapperDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvWrapperDataTests.swift; sourceTree = "<group>"; };
+		450C376D1E607BEAA86148B4 /* RPETvWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPETvWrapper.swift; sourceTree = "<group>"; };
+		4AA726B1B72C87D8AC4857A6 /* Pods-RPEntertainmentDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPEntertainmentDataTests.release.xcconfig"; path = "Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D72D2084D294070475F7A84 /* Pods-RPEntertainmentData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPEntertainmentData.release.xcconfig"; path = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData.release.xcconfig"; sourceTree = "<group>"; };
+		CE2AB5D4DEA87E1D9AA2B88C /* Pods-RPEntertainmentData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPEntertainmentData.debug.xcconfig"; path = "Target Support Files/Pods-RPEntertainmentData/Pods-RPEntertainmentData.debug.xcconfig"; sourceTree = "<group>"; };
+		E584897E978E13E4A7C04804 /* Pods_RPEntertainmentData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPEntertainmentData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4EA9EED87E636FB7BF23A8 /* Pods_RPEntertainmentDataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPEntertainmentDataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84199A50AB786DCE6F04DC5 /* Pods_RPEntertainmentData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,12 +65,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				12B993EC2325CAF7006A7038 /* RPEntertainmentData.framework in Frameworks */,
+				FB9C23CDF4292B0B4DBCDAC1 /* Pods_RPEntertainmentDataTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E83C564DBFB17B731CA061E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE2AB5D4DEA87E1D9AA2B88C /* Pods-RPEntertainmentData.debug.xcconfig */,
+				5D72D2084D294070475F7A84 /* Pods-RPEntertainmentData.release.xcconfig */,
+				1214E74D51EB07577EDC8211 /* Pods-RPEntertainmentDataTests.debug.xcconfig */,
+				4AA726B1B72C87D8AC4857A6 /* Pods-RPEntertainmentDataTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		129569322328662100CBAB01 /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +91,31 @@
 			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
+		1295693523287A4700CBAB01 /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				1295694523298FC000CBAB01 /* RPEMovieWrapper.swift */,
+				450C376D1E607BEAA86148B4 /* RPETvWrapper.swift */,
+			);
+			path = Implement;
+			sourceTree = "<group>";
+		};
+		1295693823287AC200CBAB01 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1295693923287AED00CBAB01 /* IRPEDataManagerDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		12B993D82325CAF7006A7038 = {
 			isa = PBXGroup;
 			children = (
 				12B993E42325CAF7006A7038 /* RPEntertainmentData */,
 				12B993EF2325CAF7006A7038 /* RPEntertainmentDataTests */,
 				12B993E32325CAF7006A7038 /* Products */,
+				0E83C564DBFB17B731CA061E /* Pods */,
+				9A219AA43BB6579D27B72D29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +131,8 @@
 		12B993E42325CAF7006A7038 /* RPEntertainmentData */ = {
 			isa = PBXGroup;
 			children = (
+				1295693823287AC200CBAB01 /* Delegate */,
+				1295693523287A4700CBAB01 /* Implement */,
 				129569322328662100CBAB01 /* CoreDataModel */,
 				12B993E52325CAF7006A7038 /* RPEntertainmentData.h */,
 				12B993E62325CAF7006A7038 /* Info.plist */,
@@ -95,9 +145,19 @@
 			isa = PBXGroup;
 			children = (
 				12B993F02325CAF7006A7038 /* RPEntertainmentDataTests.swift */,
+				450C371F6BFDCA139F92592C /* RPETvWrapperDataTests.swift */,
 				12B993F22325CAF7006A7038 /* Info.plist */,
 			);
 			path = RPEntertainmentDataTests;
+			sourceTree = "<group>";
+		};
+		9A219AA43BB6579D27B72D29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E584897E978E13E4A7C04804 /* Pods_RPEntertainmentData.framework */,
+				EF4EA9EED87E636FB7BF23A8 /* Pods_RPEntertainmentDataTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B993F62325CAF7006A7038 /* Build configuration list for PBXNativeTarget "RPEntertainmentData" */;
 			buildPhases = (
+				0742011E5415AD6720AC34CA /* [CP] Check Pods Manifest.lock */,
 				12B993DD2325CAF7006A7038 /* Headers */,
 				12B993DE2325CAF7006A7038 /* Sources */,
 				12B993DF2325CAF7006A7038 /* Frameworks */,
@@ -136,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B993F92325CAF7006A7038 /* Build configuration list for PBXNativeTarget "RPEntertainmentDataTests" */;
 			buildPhases = (
+				23A6FF6C4E02465C6995E031 /* [CP] Check Pods Manifest.lock */,
 				12B993E72325CAF7006A7038 /* Sources */,
 				12B993E82325CAF7006A7038 /* Frameworks */,
 				12B993E92325CAF7006A7038 /* Resources */,
+				B90FAF8F683D5C65F2A376E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,13 +267,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0742011E5415AD6720AC34CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPEntertainmentData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23A6FF6C4E02465C6995E031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPEntertainmentDataTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B90FAF8F683D5C65F2A376E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RPEntertainmentDataTests/Pods-RPEntertainmentDataTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12B993DE2325CAF7006A7038 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1295693A23287AED00CBAB01 /* IRPEDataManagerDelegate.swift in Sources */,
 				129569312328661B00CBAB01 /* RPECoreDataModel.xcdatamodeld in Sources */,
+				1295694623298FC000CBAB01 /* RPEMovieWrapper.swift in Sources */,
 				12956934232869C800CBAB01 /* RPEDataManager.swift in Sources */,
+				450C3A125BF177DEC3D02784 /* RPETvWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12B993F12325CAF7006A7038 /* RPEntertainmentDataTests.swift in Sources */,
+				450C36725460D7D5ED30FD11 /* RPETvWrapperDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +488,7 @@
 		};
 		12B993F72325CAF7006A7038 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE2AB5D4DEA87E1D9AA2B88C /* Pods-RPEntertainmentData.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -368,7 +500,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RPEntertainmentData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +517,7 @@
 		};
 		12B993F82325CAF7006A7038 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D72D2084D294070475F7A84 /* Pods-RPEntertainmentData.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -396,7 +529,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RPEntertainmentData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,6 +545,7 @@
 		};
 		12B993FA2325CAF7006A7038 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1214E74D51EB07577EDC8211 /* Pods-RPEntertainmentDataTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -431,6 +565,7 @@
 		};
 		12B993FB2325CAF7006A7038 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AA726B1B72C87D8AC4857A6 /* Pods-RPEntertainmentDataTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

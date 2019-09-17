@@ -1,0 +1,6 @@
+framework module Pods_RPEntertainmentDataTests {
+  umbrella header "Pods-RPEntertainmentDataTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
