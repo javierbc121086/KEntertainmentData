@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "KEntertainmentData"
+  spec.name         = "RPEntertainmentData"
   spec.version      = "0.0.7"
   spec.summary      = "Dependencia encargada de persistir los modelos del negocio"
   
