@@ -1,12 +1,12 @@
 //
-//  RPEMovieModel.swift
-//  RPEntertainmentService
+//  KMovieModel.swift
+//  KEntertainmentDomain
 //
-//  Created by Javier Bolaños on 9/11/19.
-//  Copyright © 2019 gipsyhub. All rights reserved.
+//  Created by Javier Bolaños on 12/29/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
-public struct RPEMovieModel {
+public struct KMovieModel {
     public var id: Int
     public var popularity: Double
     public var voteCount: Int
@@ -22,6 +22,9 @@ public struct RPEMovieModel {
     
     public var backdropPath: String
     public var posterPath: String
+    
+    public var cacheData: Any? = nil
+    public var isVerified = false
     
     public init(id: Int,
                 popularity: Double,

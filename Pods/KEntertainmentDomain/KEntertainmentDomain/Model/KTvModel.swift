@@ -1,12 +1,13 @@
 //
-//  RPETvModel.swift
-//  RPEntertainmentService
+//  KTvModel.swift
+//  KEntertainmentDomain
 //
-//  Created by Javier Bolaños on 9/12/19.
-//  Copyright © 2019 gipsyhub. All rights reserved.
+//  Created by Javier Bolaños on 12/29/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
-public struct RPETvModel {
+public struct KTvModel {
+    
     public var id: Int
     public var originalName: String
     public var genreIds: [Int]
@@ -20,6 +21,9 @@ public struct RPETvModel {
     public var voteAverage: Double
     public var overview: String
     public var posterPath: String
+    
+    public var cacheData: Any? = nil
+    public var isVerified = false
     
     public init (id: Int,
                  originalName: String,

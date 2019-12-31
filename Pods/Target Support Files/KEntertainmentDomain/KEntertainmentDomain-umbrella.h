@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "RPEntertainmentDomain.h"
+#import "KEntertainmentDomain.h"
 
-FOUNDATION_EXPORT double RPEntertainmentDomainVersionNumber;
-FOUNDATION_EXPORT const unsigned char RPEntertainmentDomainVersionString[];
+FOUNDATION_EXPORT double KEntertainmentDomainVersionNumber;
+FOUNDATION_EXPORT const unsigned char KEntertainmentDomainVersionString[];
 

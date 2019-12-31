@@ -1,16 +1,16 @@
 PODS:
-  - RPEntertainmentDomain (0.0.5)
+  - KEntertainmentDomain (0.0.1)
 
 DEPENDENCIES:
-  - RPEntertainmentDomain
+  - KEntertainmentDomain
 
 SPEC REPOS:
-  "git@github.com:javierbc121086/RPEntertainmentDomainSpec.git":
-    - RPEntertainmentDomain
+  "git@github.com:javierbc121086/KEntertainmentDomainSpec.git":
+    - KEntertainmentDomain
 
 SPEC CHECKSUMS:
-  RPEntertainmentDomain: 5e14527810d8c6797da6a00d139edfc9b1b33c8d
+  KEntertainmentDomain: 63a2a0696dad6cdfbf1e970ea0e14550025a1f48
 
-PODFILE CHECKSUM: 491e6792689a128dedc87a99c12e415ff9abbc14
+PODFILE CHECKSUM: 4ca7b04bb1e24ee1ff4bce51d9eee6c6eb1cb4b2
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.1

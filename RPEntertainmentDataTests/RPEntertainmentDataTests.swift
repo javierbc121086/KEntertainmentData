@@ -2,13 +2,13 @@
 //  RPEntertainmentDataTests.swift
 //  RPEntertainmentDataTests
 //
-//  Created by Javier Bolaños on 9/8/19.
-//  Copyright © 2019 gipsyhub. All rights reserved.
+//  Created by Javier Bolaños on 12/30/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
 import XCTest
 import CoreData
-import RPEntertainmentDomain
+import KEntertainmentDomain
 @testable import RPEntertainmentData
 
 class RPEntertainmentDataTests: XCTestCase {
@@ -25,7 +25,7 @@ class RPEntertainmentDataTests: XCTestCase {
 
     func testSaveMovieDataModel() {
         for index in 1...1000 {
-            let movieModel = RPEMovieModel(
+            let movieModel = KMovieModel(
                 id: index,
                 popularity: Double(index),
                 voteCount: index,

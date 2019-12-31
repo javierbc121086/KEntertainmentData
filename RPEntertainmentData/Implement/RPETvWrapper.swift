@@ -1,26 +1,28 @@
 //
-// Created by Javier Bolaños on 9/12/19.
-// Copyright (c) 2019 gipsyhub. All rights reserved.
+//  KEntertainmentData
+//
+//  Created by Javier Bolaños on 12/30/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
-import RPEntertainmentDomain
+import KEntertainmentDomain
 import CoreData
 
 public class RPETvWrapper: IRPEDataManagerDelegate {
-    public typealias T = RPETvModel
+    public typealias T = KTvModel
 
     private var entityCoraDataName: String {
         return "RPECDTvEntity"
     }
 
-    public func get(id: Int) -> RPETvModel? {
+    public func get(id: Int) -> KTvModel? {
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDTvEntity>(entityName: self.entityCoraDataName)
             fetchRequest.predicate = NSPredicate(format: "id = %d", id)
             
             do {
                 if let coreDataTvEntity = try context.fetch(fetchRequest).first {
-                    let model = RPETvModel(
+                    let model = KTvModel(
                         id: Int(coreDataTvEntity.id),
                         originalName: coreDataTvEntity.originalName ?? "",
                         genreIds: (coreDataTvEntity.genreIds as? NSSet)?.allObjects as? [Int] ?? [],
@@ -46,8 +48,8 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
         return nil
     }
 
-    public func getAll() -> [RPETvModel]? {
-        var list = [RPETvModel]()
+    public func getAll() -> [KTvModel]? {
+        var list = [KTvModel]()
 
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDTvEntity>(entityName: self.entityCoraDataName)
@@ -56,7 +58,7 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
                 let coreDataTvEntity = try context.fetch(fetchRequest)
                 
                 for tvEntity in coreDataTvEntity {
-                    let model = RPETvModel(
+                    let model = KTvModel(
                         id: Int(tvEntity.id),
                         originalName: tvEntity.originalName ?? "",
                         genreIds: (tvEntity.genreIds as? NSSet)?.allObjects as? [Int] ?? [],
@@ -83,7 +85,7 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
         return list
     }
 
-    public func save(model: RPETvModel) {
+    public func save(model: KTvModel) {
         let isModified = self.update(model: model)
 
         if !isModified {
@@ -119,13 +121,13 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
         }
     }
 
-    public func saveAll(list: [RPETvModel]) {
+    public func saveAll(list: [KTvModel]) {
         list.forEach { (model) in
             self.save(model: model)
         }
     }
 
-    public func update(model: RPETvModel) -> Bool {
+    public func update(model: KTvModel) -> Bool {
         var isModifiedModel = false
 
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {

@@ -1,9 +1,9 @@
 //
 //  IRPEDataManagerDelegate.swift
-//  RPEntertainmentData
+//  KEntertainmentData
 //
-//  Created by Javier Bolaños on 9/10/19.
-//  Copyright © 2019 gipsyhub. All rights reserved.
+//  Created by Javier Bolaños on 12/30/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
 public protocol IRPEDataManagerDelegate {

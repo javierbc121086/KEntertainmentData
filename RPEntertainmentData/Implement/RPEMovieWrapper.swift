@@ -1,29 +1,29 @@
 //
 //  RPEMovieWrapper.swift
-//  RPEntertainmentData
+//  KEntertainmentData
 //
-//  Created by Javier Bolaños on 9/11/19.
-//  Copyright © 2019 gipsyhub. All rights reserved.
+//  Created by Javier Bolaños on 12/30/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
-import RPEntertainmentDomain
+import KEntertainmentDomain
 import CoreData
 
 public class RPEMovieWrapper: IRPEDataManagerDelegate {
-    public typealias T = RPEMovieModel
+    public typealias T = KMovieModel
     
     private var entityCoraDataName: String {
         return "RPECDMovieEntity"
     }
     
-    public func get(id: Int) -> RPEMovieModel? {
+    public func get(id: Int) -> KMovieModel? {
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDMovieEntity>(entityName: self.entityCoraDataName)
             fetchRequest.predicate = NSPredicate(format: "id = %d", id)
             
             do {
                 if let coreDataMovieEntity = try context.fetch(fetchRequest).first {
-                    let model = RPEMovieModel(
+                    let model = KMovieModel(
                         id: Int(coreDataMovieEntity.id),
                         popularity: coreDataMovieEntity.popularity,
                         voteCount:  Int(coreDataMovieEntity.voteCount),
@@ -51,8 +51,8 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
         return nil
     }
 
-    public func getAll() -> [RPEMovieModel]? {
-        var list = [RPEMovieModel]()
+    public func getAll() -> [KMovieModel]? {
+        var list = [KMovieModel]()
 
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDMovieEntity>(entityName: self.entityCoraDataName)
@@ -61,7 +61,7 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
                 let movieCoreDataEntity = try context.fetch(fetchRequest)
                 
                 for movieEntity in movieCoreDataEntity {
-                    let model = RPEMovieModel(
+                    let model = KMovieModel(
                         id: Int(movieEntity.id),
                         popularity: movieEntity.popularity,
                         voteCount:  Int(movieEntity.voteCount),
@@ -89,7 +89,7 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
         return list
     }
     
-    public func save(model: RPEMovieModel) {
+    public func save(model: KMovieModel) {
         let isModified = self.update(model: model)
         
         if !isModified {
@@ -126,13 +126,13 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
         }
     }
     
-    public func saveAll(list: [RPEMovieModel]) {
+    public func saveAll(list: [KMovieModel]) {
         list.forEach { (model) in
             self.save(model: model)
         }
     }
     
-    public func update(model: RPEMovieModel) -> Bool {
+    public func update(model: KMovieModel) -> Bool {
         var isModifiedModel = false
         
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {

@@ -1,11 +1,13 @@
 //
-// Created by Javier Bolaños on 9/12/19.
-// Copyright (c) 2019 gipsyhub. All rights reserved.
+//  RPEntertainmentDataTests
+//
+//  Created by Javier Bolaños on 12/30/19.
+//  Copyright © 2019 Javier Bolaños. All rights reserved.
 //
 
 import XCTest
 import CoreData
-import RPEntertainmentDomain
+import KEntertainmentDomain
 @testable import RPEntertainmentData
 
 class RPETvWrapperDataTests: XCTestCase {
@@ -21,7 +23,7 @@ class RPETvWrapperDataTests: XCTestCase {
 
     func testSaveMovieDataModel() {
         for index in 1...1000 {
-            let tvModel = RPETvModel(
+            let tvModel = KTvModel(
                     id: index,
                     originalName: "originalName", 
                     genreIds: [444, 555, 666, 777],
