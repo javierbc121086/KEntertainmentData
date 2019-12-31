@@ -16,6 +16,8 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
         return "RPECDMovieEntity"
     }
     
+    public init() { }
+    
     public func get(id: Int) -> KMovieModel? {
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDMovieEntity>(entityName: self.entityCoraDataName)

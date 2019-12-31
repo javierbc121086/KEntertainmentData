@@ -14,7 +14,9 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
     private var entityCoraDataName: String {
         return "RPECDTvEntity"
     }
-
+    
+    public init() { }
+    
     public func get(id: Int) -> KTvModel? {
         if let context = RPEDataManager.Shared.persistentContainer?.viewContext {
             let fetchRequest = NSFetchRequest<RPECDTvEntity>(entityName: self.entityCoraDataName)
