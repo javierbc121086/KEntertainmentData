@@ -10,7 +10,8 @@ import Foundation
 import CoreData
 
 class RPEDataManager {
-    private let identifier      = "mx.com.gipsyhub.RPEntertainmentData"
+    //private let identifier      = "mx.com.gipsyhub.RPEntertainmentData"
+    private let identifier      = "org.cocoapods.RPEntertainmentData" // Cocoa Pods
     private let coreDataModel   = "RPECoreDataModel"
     
     private let _concurrentQueue = DispatchQueue(label: "concurrentQueue", attributes: .concurrent)

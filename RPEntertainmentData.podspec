@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "RPEntertainmentData"
-  spec.version      = "0.0.10"
+  spec.version      = "0.0.11"
   spec.summary      = "Dependencia encargada de persistir los modelos del negocio"
   
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
 end
 
 ## Release New Pod ##
-# git tag -a 0.0.10 -m "Pod V0.0.10"
+# git tag -a 0.0.11 -m "Pod V0.0.11"
 # git push --tags
 
 # pod repo push KEntertainmentDataSpec RPEntertainmentData.podspec --allow-warnings --sources='https://github.com/CocoaPods/Specs.git,git@github.com:javierbc121086/KEntertainmentDomainSpec.git' --private --verbose
