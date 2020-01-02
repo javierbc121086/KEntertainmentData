@@ -1,5 +1,5 @@
 PODS:
-  - KEntertainmentDomain (0.0.1)
+  - KEntertainmentDomain (0.0.2)
 
 DEPENDENCIES:
   - KEntertainmentDomain
@@ -9,7 +9,7 @@ SPEC REPOS:
     - KEntertainmentDomain
 
 SPEC CHECKSUMS:
-  KEntertainmentDomain: 63a2a0696dad6cdfbf1e970ea0e14550025a1f48
+  KEntertainmentDomain: 5528449f95ae5ae93b22e9b9df9a4f668c6b9779
 
 PODFILE CHECKSUM: 4ca7b04bb1e24ee1ff4bce51d9eee6c6eb1cb4b2
 

@@ -39,7 +39,8 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
                         overview:  coreDataMovieEntity.overview ?? "",
                         releaseDate:  coreDataMovieEntity.releaseDate ?? "",
                         backdropPath:  coreDataMovieEntity.backdropPath ?? "",
-                        posterPath:  coreDataMovieEntity.posterPath ?? ""
+                        posterPath:  coreDataMovieEntity.posterPath ?? "",
+                        requestType: Int(coreDataMovieEntity.requestType)
                     )
                     
                     return model
@@ -77,7 +78,8 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
                         overview:  movieEntity.overview ?? "",
                         releaseDate:  movieEntity.releaseDate ?? "",
                         backdropPath:  movieEntity.backdropPath ?? "",
-                        posterPath:  movieEntity.posterPath ?? ""
+                        posterPath:  movieEntity.posterPath ?? "",
+                        requestType: Int(movieEntity.requestType)
                     )
                     
                     list.append(model)
@@ -114,7 +116,8 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
                     movieCoreDataEntity.releaseDate         = model.releaseDate
                     movieCoreDataEntity.backdropPath        = model.backdropPath
                     movieCoreDataEntity.posterPath          = model.posterPath
-                    movieCoreDataEntity.genreIds = NSSet(array: model.genreIds)
+                    movieCoreDataEntity.genreIds            = NSSet(array: model.genreIds)
+                    movieCoreDataEntity.requestType         = Int32(model.requestType)
                     
                     do {
                         try context.save()
@@ -157,6 +160,7 @@ public class RPEMovieWrapper: IRPEDataManagerDelegate {
                     movieCoreDataEntity.setValue(model.backdropPath, forKey: "backdropPath")
                     movieCoreDataEntity.setValue(model.posterPath, forKey: "posterPath")
                     movieCoreDataEntity.setValue(NSSet(array: model.genreIds), forKey: "genreIds")
+                    movieCoreDataEntity.setValue(model.requestType, forKey: "requestType")
                     
                     try context.save()
                     

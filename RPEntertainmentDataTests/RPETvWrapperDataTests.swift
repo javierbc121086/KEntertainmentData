@@ -22,7 +22,7 @@ class RPETvWrapperDataTests: XCTestCase {
     }
 
     func testSaveMovieDataModel() {
-        for index in 1...1000 {
+        for index in 1...10 {
             let tvModel = KTvModel(
                     id: index,
                     originalName: "originalName", 
@@ -36,7 +36,8 @@ class RPETvWrapperDataTests: XCTestCase {
                     originalLanguage: "originalLanguage", 
                     voteAverage: 0.0,
                     overview: "overview", 
-                    posterPath: "posterPath")
+                    posterPath: "posterPath",
+                    requestType: 888)
 
             self.modelWrapper?.save(model: tvModel)
         }

@@ -24,7 +24,7 @@ class RPEntertainmentDataTests: XCTestCase {
     }
 
     func testSaveMovieDataModel() {
-        for index in 1...1000 {
+        for index in 1...10 {
             let movieModel = KMovieModel(
                 id: index,
                 popularity: Double(index),
@@ -39,7 +39,8 @@ class RPEntertainmentDataTests: XCTestCase {
                 overview: "overview \(index)",
                 releaseDate: "releaseDate \(index)",
                 backdropPath: "backdropPath \(index)",
-                posterPath: "posterPath \(index)"
+                posterPath: "posterPath \(index)",
+                requestType: 999
             )
             
             self.modelWrapper?.save(model: movieModel)

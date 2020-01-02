@@ -37,7 +37,9 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
                         originalLanguage: coreDataTvEntity.originalLanguage ?? "",
                         voteAverage: coreDataTvEntity.voteAverage,
                         overview: coreDataTvEntity.overview ?? "",
-                        posterPath: coreDataTvEntity.posterPath ?? "")
+                        posterPath: coreDataTvEntity.posterPath ?? "",
+                        requestType: Int(coreDataTvEntity.requestType)
+                    )
                     
                     return model
                 }
@@ -73,7 +75,8 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
                         originalLanguage: tvEntity.originalLanguage ?? "",
                         voteAverage: tvEntity.voteAverage,
                         overview: tvEntity.overview ?? "",
-                        posterPath: tvEntity.posterPath ?? ""
+                        posterPath: tvEntity.posterPath ?? "",
+                        requestType: Int(tvEntity.requestType)
                     )
                     
                     list.append(model)
@@ -110,6 +113,7 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
                     coreDataTvEntity.voteAverage        = model.voteAverage
                     coreDataTvEntity.overview           = model.overview
                     coreDataTvEntity.posterPath         = model.posterPath
+                    coreDataTvEntity.requestType        = Int32(model.requestType)
                     
                     do {
                         try context.save()
@@ -151,6 +155,7 @@ public class RPETvWrapper: IRPEDataManagerDelegate {
                     coreDataTvEntity.setValue(model.voteAverage, forKey: "voteAverage")
                     coreDataTvEntity.setValue(model.overview, forKey: "overview")
                     coreDataTvEntity.setValue(model.posterPath, forKey: "posterPath")
+                    coreDataTvEntity.setValue(model.requestType, forKey: "requestType")
                     
                     try context.save()
                     
