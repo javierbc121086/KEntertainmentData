@@ -14,9 +14,8 @@ public class KDataWrapper {
     
     private init() { }
     
-    public func saveImage(image: UIImage) -> String? {
-        let date = String( Date.timeIntervalSinceReferenceDate )
-        let imageName = date.replacingOccurrences(of: ".", with: "-") + ".png"
+    public func saveImage(image: UIImage, name: String) -> String? {
+        let imageName = name
         
         if let imageData = image.pngData() {
             do {
